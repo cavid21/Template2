@@ -1,0 +1,572 @@
+@import 'bootstrap';
+$mainWidth: 100%;
+$headerTopColor: #FBFBFB;
+$mainColor: #FFFFFF;
+$secondColor: #31A3DD;
+$thirdColor: #3B4344;
+$whiteTextColor: #fff;
+$mainTextColor: #555555;
+$secondTextColor: #999999;
+$borderColor: #F1F1F1;
+$border1: 1px solid $borderColor;
+$border2: 3px solid $borderColor;
+$border3: 1px solid $secondColor;
+$borderHover: 3px solid $secondColor;
+$tr: all 1s ease;
+$bgImgPackage-bottom: url("../../images/demo-2.png");
+
+body , html
+{
+	font-size: 14px;
+}
+#header-top
+{
+	.col-md-6
+	{
+		height: 43px;
+	}
+	background: $headerTopColor;
+	color: $secondTextColor;
+	border: $border1;  
+	span
+	{
+		margin-left: -8px;
+		font-size: .95em;
+		border: $border1;
+		padding: 15px 20px;
+		line-height: 41px;
+		&:last-child
+		{
+			border-left: $secondTextColor;
+		}
+		i
+		{
+			margin-right: 3px;
+		}
+	}
+	ul 
+	{
+		li
+		{
+			width: 43px;
+	   		height: 44px;
+			display: inline-block;
+			//padding: 6px;	
+			padding: 14px 0 0 16px;
+			margin-right: -5px;
+			border: $border1;
+			a
+			{
+				color: $secondTextColor;
+			}
+			&:first-child:hover
+			{
+				background: #4867AA;
+				a
+				{
+					color: $whiteTextColor;
+				}
+			}
+			&:nth-child(2):hover
+			{
+				background: #00e6e6;
+				a
+				{
+					color: $whiteTextColor;
+				}
+			}
+			&:nth-child(3):hover
+			{
+				background: #D84D2F;
+				a
+				{
+					color: $whiteTextColor;
+				}
+			}
+			&:nth-child(4):hover
+			{
+				background: #CB2027;
+				a
+				{
+					color: $whiteTextColor;
+				}
+			}
+			&:last-child:hover
+			{
+				background: #0177B5;
+				a
+				{
+					color: $whiteTextColor;
+				}
+			}
+		}
+	}
+}
+
+#logo
+{
+	height: 102px;
+	background: $mainColor;
+	img
+	{
+		margin: 30px -10px;
+	}
+	ul
+	{
+		padding: 28px 0;
+		li
+		{
+			display: inline-block;
+			margin: 10px 8px;
+			a
+			{
+				padding: 7px 15px;	
+				font-size: 1.1em;
+				color: $mainTextColor;
+				&:hover
+				{
+					background: $secondColor;
+					border-radius: 20px;
+					color: $whiteTextColor;	
+					text-decoration: none;	
+				}
+			}
+		}
+	}
+}
+
+#slider 
+{
+	.col-md-12
+	{
+		margin-left: -15px;
+		img:first-child
+		{
+			z-index: 0;
+		}
+		img:nth-child(2)
+		{
+			z-index: 1;
+			margin-left: 150px;
+			margin-top: -516px;
+		}
+		div
+		{
+			text-transform: uppercase;
+			font-weight: 700;
+			z-index: 2;
+			margin-left: 400px;
+			margin-top: -350px;
+			h3
+			{
+				color: $mainTextColor;
+			}
+			h1
+			{
+				font-size: 3em;
+				span
+				{
+					color: $secondColor;
+					margin-right: 20px;	
+				}
+			}
+			h6
+			{
+				color: $whiteTextColor;
+			}
+		}
+	}
+}
+
+#slider-bottom
+{
+	margin: 250px 0 50px 0;
+	background: $mainColor;
+	.col-md-4
+	{
+		transition: $tr;
+		width: 360px;
+		height: 179px;
+		&:nth-child(2)
+		{
+			margin: 0 30px;
+		}
+		border: $border2;
+		i
+		{
+			transition: $tr;
+			color: $borderColor;
+			background: $mainColor;
+			font-size: 3em;
+			padding: 0 10px;
+			margin-top: -25px;
+		}
+		h3
+		{
+			font-size: 1.5em;
+			color: $mainTextColor;
+			font-weight: 700;
+		}
+		p
+		{
+			color: $secondTextColor;
+		}
+		&:hover
+		{
+			border: $borderHover;
+			.servicebox-icon
+			{
+				transform: translate(0 , -10px); 
+				i
+				{
+					color: $secondColor;
+				}
+			}
+		}
+	}
+}
+
+#hello
+{
+ 	background: $thirdColor;
+ 	color: $whiteTextColor;
+ 	height: 460px;
+ 	.col-md-12
+ 	{
+	 	h3
+	 	{
+	 		margin-top: 60px;
+	 		font-size: 1.9em;
+	 		font-weight: 700;
+	 	}
+	 	h5
+	 	{
+	 		margin-bottom: 40px;
+	 	}
+	}
+	.textAlign
+	{
+		text-align: right;
+	}
+	ul
+ 	{
+ 		li
+ 		{
+ 			margin-bottom: 25px; 
+			h5
+			{
+				font-weight: 700;
+				display: inline;
+				margin: 0 10px;
+			}
+			i
+			{
+				color: $secondColor;
+				padding: 6px;
+				border: $border3;
+				border-radius: 100%;
+			}	
+ 		}
+ 	}
+}
+
+#package
+{
+	.row_1
+	{
+		h2
+		{
+			color: $mainTextColor;
+			margin-top: 80px;
+			letter-spacing: .05px;
+			word-spacing: .05px;
+			font-weight: 700;
+			font-size: 2em;
+		}
+		h5
+		{
+			color: $secondTextColor;
+			margin-bottom: 50px;
+		}
+	}
+	.row_2
+	{
+
+		background: $mainColor; 
+		margin-bottom: 30px;
+		.col-md-3
+		{ 
+			margin-left: -5px;
+			div:first-child
+			{
+				.mostPopular
+				{
+					height: 60px;
+					width: 61px;
+					border-radius: 100px;
+					background:$secondColor;
+					margin: -75px 0 0 210px; 
+					color: $whiteTextColor;
+					h6
+					{
+						font-size: .6em;
+						transform: rotate(25deg);
+					}
+				}
+				.commingSoon
+				{
+					height: 60px;
+					width: 61px;
+					border-radius: 100px;
+					background: #E2480C;
+					margin: -75px 0 0 210px; 
+					color: $whiteTextColor;
+					h6
+					{
+						font-size: .6em;
+						transform: rotate(25deg);
+					}
+				}
+				border: $border2;
+				border-bottom: $border1;
+				margin-bottom: -1px;
+				padding: 12px 0;
+				color: $mainTextColor;
+				height: 65px;
+				width: 256.5px;
+				h4
+				{
+					font-weight: 700;
+				}
+			}
+			div:nth-child(2)
+			{
+				border: $border2;
+				border-bottom: $border1;
+				border-top: $border1;
+				color: $mainTextColor;
+				margin-bottom: -1px;
+				padding-top: 10px;
+				height: 103px;
+				width: 256.5px;
+				h1
+				{
+					line-height: .6;
+					font-size: 3.5em;
+					font-weight: 700;
+				}
+				h6
+				{
+					line-height: 1;
+					font-weight: 700;
+				}
+			}
+			div:nth-child(3)
+			{
+				border: $border2;
+				border-bottom: none;
+				border-top: $border1;
+				color: $secondTextColor;
+				margin-bottom: -1px;
+				height: 195px;
+				width: 256.5px;
+				ul
+				{
+					padding-top: 15px;
+					li
+					{
+						line-height: 35px;
+					}
+				}
+			}
+			div:last-child
+			{
+				border: $border2;
+				border-top: none;
+				color: $secondTextColor;
+				height: 53px;
+				width: 256.5px;
+				padding-top: 15px;
+				a
+				{
+					transform: uppercase; 
+					color: $secondTextColor;
+					font-weight: 700;
+					&:hover
+					{
+						text-decoration: none;
+						color: $secondColor; 
+					}
+				}
+			}
+			&:hover
+			{
+				transform: translate(0 , -25px); 
+			}
+			transition: all .3s ease;
+		}
+	}
+}
+
+#package-bottom
+{
+	height: 279px;
+	background-image: $bgImgPackage-bottom;
+	color: $secondTextColor;
+	h2
+	{
+		color: $mainTextColor;
+		padding-top: 20px;
+		font-weight: 700;
+	}
+	p
+	{
+		padding: 40px 0 20px 0;
+		font-size: 1.2em; 
+	}
+	span
+	{
+		font-weight: 700;
+	}
+}
+
+#our
+{
+	margin-bottom: 50px;
+	.lefT
+	{
+		h4
+		{
+			font-weight: 700;
+			padding: 20px 0;
+		}
+		div:nth-child(2)
+		{
+			background: $secondColor;
+			height: 42px;
+			padding: 10px 15px 0 20px;
+			color: $whiteTextColor;
+			font-weight: 700;
+			border-radius: 2px 2px 0 0;
+		}
+		div:nth-child(3)
+		{
+			height: 110px;
+			border: $border1;
+			color: $secondTextColor;
+			padding: 20px 0 0 20px;
+			line-height: 25px;
+		}
+		div:nth-child(4)
+		{
+			height: 42px;
+			border: $border1;
+			margin: 15px 0 15px 0;
+			color: $mainTextColor;
+			padding: 10px 15px 0 20px;
+			font-weight: 700;
+			i
+			{
+				color: $secondColor;
+			}
+		}
+		div:nth-child(5)
+		{
+			height: 42px;
+			border: $border1;
+			color: $mainTextColor;
+			padding: 10px 15px 0 20px;
+			font-weight: 700;
+			i
+			{
+				color: $secondColor;
+			}
+		}
+	} 
+	.righT
+	{
+		h4
+		{
+			font-weight: 700;
+			padding: 20px 0;
+		}
+		div
+		{ 
+			h1
+			{
+				font-size: 4em;
+			}
+			color: $whiteTextColor;
+			div
+			{
+				float: left;
+				border-radius: 2px;
+			}
+			div:first-child
+			{
+				width: 181.66px;
+				height: 130px;
+				background: $secondColor;
+				margin: 0 2px 2px 0;
+			}
+			div:nth-child(2)
+			{
+				width: 181.66px;
+				height: 130px; 
+				background: $secondColor;
+				margin: 0 2px 2px 3px;
+			}
+			div:nth-child(3)
+			{
+				width: 181.66px;
+				height: 130px;
+				background: $secondColor;
+				margin: 0 0 2px 3px;
+			}
+			div:nth-child(4)
+			{
+				width: 181.66px;
+				height: 130px; 
+				background: $secondColor;
+				margin: 3px 2px 2px 0;
+			}
+			div:nth-child(5)
+			{
+				width: 181.66px;
+				height: 130px;
+				background: $secondColor;
+				margin: 3px 2px 0 3px;
+			}
+			div:last-child
+			{
+				width: 181.66px;
+				height: 130px; 
+				background: $secondColor;
+				margin: 3px 0 0 3px; 
+			}
+		}
+	}
+}
+#footer
+{
+	background:$thirdColor;
+	height: 53px;
+	color: $whiteTextColor;
+	p
+	{
+		padding-top:20px;
+	}
+	ul
+	{
+		li
+		{
+			display: inline-block;
+			padding-top:20px;
+			a
+			{
+				color: $whiteTextColor;
+				text-decoration: none; 
+			}
+		}
+	}
+}
